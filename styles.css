@@ -1,169 +1,228 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #b5cfbb;
-    color: #000000;
+.container {
+    width: 80%;
+    margin: auto;
     padding: 20px;
+    border: 2px solid #ffffff;
+    
 }
 
-h2 {
-    margin-left: 30%;
-    margin-bottom: 20px;
-    margin-top: 60px;
-    color: #0d0d0d;
-}
 
-form {
-    background-color: #dedddd;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    margin-left: 30%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 
-form label {
-    display: block;
-    margin-top: 10px;
+/* gepeto utilizado para conseguir separar as imagens do .box das seções (curiosidades, torcida e história). Massa demais! */
+section[title="curiosidades"] .box {
+    width: 220px;
+    height: 350px;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #E5383B;
+    background-image: linear-gradient(rgba(229, 56, 59, 0.5), rgba(229, 56, 59, 0.5)), url(https://i.pinimg.com/736x/29/d8/75/29d87538356796e8b5396cd2e17c7f72.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        5px 5px 5px rgba(0, 0, 0, 0.7),
+        -5px -5px 5px rgba(0, 0, 0, 0.7),
+        5px 5px 5px rgba(0, 0, 0, 0.7),
+        -5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
-form input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-
-}
-
-button,
-.button {
-    background-color: #79b888;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 33%;
-}
-
-.button.delete {
-    background-color: #dc3545;
-}
-
-button:hover,
-.button:hover {
-    opacity: 0.9;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-th, td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #f2f2f2;
+section[title="Torcida"] .box {
+    width: 900px;
+    height: 450px;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #E5383B;
+    background-image: linear-gradient(rgba(229, 56, 59, 0.5), rgba(229, 56, 59, 0.5)), url(https://resistenciacolorada.net.br/wp-content/uploads/2022/03/51948473863_6eb6c5bf6e_o-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        5px 5px 5px rgba(0, 0, 0, 0.7),
+        -5px -5px 5px rgba(0, 0, 0, 0.7),
+        5px 5px 5px rgba(0, 0, 0, 0.7),
+        -5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
-td:last-child {
+section[title="Historia"] .box {
+    width: 900px;
+    height: 450px;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #E5383B;
+    background-image: linear-gradient(rgba(229, 56, 59, 0.5), rgba(229, 56, 59, 0.5)), url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ043_OOZsHnjo1pMalbhvS8f_v3NquIqsXf312dKMkxEmyIcDOz0F4O99FFyiqMizw3Dyn3SnrYP3YtRYbg8QSu9JCCFiU_rFc1JFolN6nJXL2vl-jYJi31-iZCcasrJwuXedQ8xc9nk/s1600/1948+Alfeu+Ivo+Nena+%C3%81vila+Ilmo+Viana+Tesourinha+Villalba+Ad%C3%A3osinho+Fandi%C3%B1o+Carlitos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        5px 5px 5px rgba(0, 0, 0, 0.7),
+        -5px -5px 5px rgba(0, 0, 0, 0.7),
+        5px 5px 5px rgba(0, 0, 0, 0.7),
+        -5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
-body.home {
-    font-family: Arial, sans-serif;
-    background-color: #b5cfbb;
-    margin: 0;
+
+.flex {
     display: flex;
-    height: 100vh;
-    display: flex;
+}
+
+.center {
     justify-content: center;
     align-items: center;
 }
 
-.container {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.space-between {
+    justify-content: space-between;
 }
 
-h1 {
-    margin-bottom: 40px;
-    font-size: 28px;
-    color: #333;
+.space-around {
+    justify-content: space-around;
 }
 
-.button-group {
+.wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo-container {
+    flex: 1;
     display: flex;
     justify-content: center;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-left: 25%;
+
+
+
+
+}
+
+header {
+    background-color: #E5383B;
+    background-image: linear-gradient(rgba(229, 56, 59, 0.5), rgba(229, 56, 59, 0.5)), url(https://scontent.fpoa5-1.fna.fbcdn.net/v/t39.30808-6/481080466_1043747787796873_6806436555934664549_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=AtvxfCIVmmYQ7kNvgFazqqn&_nc_oc=AdgqT3jEEUT8BegECSh4Ii2ebTYlLO8wyRlKwq2PKMVIGOlUeELUmiaBRQ28OCgYQ60&_nc_zt=23&_nc_ht=scontent.fpoa5-1.fna&_nc_gid=2kTjK-Gzjv28s2jiIFpa8Q&oh=00_AYEKegMwhsL-QTuNgIQFZwmYdOflbewaIuCLAmRtN1vNiQ&oe=67DA1447);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+
+}
+
+.lista {
+    display: flex;
     gap: 30px;
+    list-style-type: none;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 25%;
+
 }
 
-.btn {
-    padding: 15px 30px;
-    font-size: 16px;
-    text-decoration: none;
-    background-color: #79b888;
+.lista a {
     color: white;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+
+
+
 }
 
-.btn:hover {
-    background-color: #2ac922;
-}
-
-.home-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 24px;
-    text-decoration: none;
-    color: #333;
-    background-color: #ffffff;
-    border: 2px solid #79b888;
-    padding: 5px 10px;
-    border-radius: 8px;
-    transition: background-color 0.3s, transform 0.2s;
-    z-index: 1000;
-}
-
-.home-button:hover {
-    background-color: #79b888;
-    color: white;
-    transform: scale(1.05);
-}
-.extra-button {
+/* disponibilizado pelo professor */
+.interna {
+    margin-top: 30px;
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 20px; 
-    margin-right: 22%;
+    border-radius: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow:
+        3px 2px 2px rgba(0, 0, 0, 0.7),
+        -1px -1px 2px rgba(0, 0, 0, 0.7),
+        3px 2px 2px rgba(0, 0, 0, 0.7),
+        -1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+
+.externa {
+    background-color: #E5383B;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 60px;
+}
+
+footer {
+    background-color: #E5383B; /* Cor de fundo igual ao header */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Padding para espaçamento */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 16px;
 }
